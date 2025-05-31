@@ -44,8 +44,9 @@ text-decoration: none;
 padding-top: 12px;
 }
 
-#tabs-top :hover {
+#tabs-top a:hover {
     color: greenyellow;
+    background-color: #285c28;
 }
 
 #main-home{
@@ -74,8 +75,9 @@ padding-top: 12px;
     padding-top: 12px;
 }
 
-#tabs-bottom :hover {
+#tabs-bottom a:hover {
     color: yellowgreen;
+    background-color: #285c28;
 }
 
 #main{
@@ -87,6 +89,7 @@ padding-top: 12px;
 #content{
     padding-top: 1px;
     padding-bottom: 50px;
+    animation: fadeIn 1s case-in 0.3s forwards;
 }
 
 a.info-box {
@@ -104,6 +107,7 @@ a.info-box {
     height: 70px;
     margin: 10px;
     float: left;
+    flex-shrink: 0;
 }
 
 .info-box h3 {
@@ -111,6 +115,7 @@ a.info-box {
     margin-bottom: 0;
     width: 90%;
     color: #572800;
+    font-size: 1em;
 }
 
 .info-box p{
@@ -118,6 +123,7 @@ a.info-box {
     padding: 0;
     width: 90%;
     color: #131313;
+    font-size: 1em;
 }
 
 
@@ -129,11 +135,11 @@ a.info-box {
 
 #info-box-full {
     background: rgba(255, 255, 255, .8);
-    width: 90%;
+    width: 98%;
     display: block;
     margin: auto;
     margin-top: 12px;
-    padding: 10px;
+    padding: 6px;
 }
 
 #info-box-full img {
@@ -175,7 +181,7 @@ input {
 
 textarea {
     width: 100%;
-    height: 6s5px;
+    height: 65px;
     margin: 12px 0;
     border: 1px solid #929292;
 }
@@ -190,4 +196,17 @@ textarea {
     font-weight: 600;
     margin: 12px 0;
     padding: 8px 0;
+}
+
+.button :hover {
+    background-color: #388e3c;
+}
+
+.info-box {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.info-box :hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translate (-4px) scale(1.02);
 }
