@@ -167,10 +167,16 @@ h1.info-box-weather-icon {
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 td {
     border-top: 1px solid #131313;
+    border-top: 1px solid #ececec;
+    padding: 8px 4px;
 }
 
 input {
@@ -178,6 +184,9 @@ input {
     height: 25px;
     margin: 12px 0;
     border: 1px solid #929292;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s;
 }
 
 textarea {
@@ -190,17 +199,23 @@ textarea {
 .button {
     display: block;
     background-color: forestgreen;
+    color: #fff;
     text-decoration: none;
+    border: none;
+    border-radius: 6px;
     text-align: center;
     color: white;
     font-size: 16px;
     font-weight: 600;
     margin: 12px 0;
     padding: 8px 0;
+    cursor: pointer;
+    box-shadow: 0 2px 8px(44, 62, 80, 0.08);
 }
 
 .button:hover {
-    background-color:#388e3c;
+    background-color: #388e3c;
+    transform: translate Y(-2px) scale(1.03);
 }
 
 .info-box {
@@ -208,11 +223,19 @@ textarea {
 }
 
 .info-box :hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 16px rgba(131, 100, 100, 0.15);
     transform: translate (-4px) scale(1.02);
 }
 
-    @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
+.card {
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+     padding: 2rem;
+     margin: 2rem;
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
