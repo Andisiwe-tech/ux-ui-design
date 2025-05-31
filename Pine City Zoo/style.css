@@ -84,12 +84,13 @@ padding-top: 12px;
     margin-top: 119px;
     background: url('images/map-blur.png');
     background-repeat: repeat-y;
+    animation: fadeIn 1s ease-in 0.3s forwards;
 }
 
 #content{
     padding-top: 1px;
     padding-bottom: 50px;
-    animation: fadeIn 1s case-in 0.3s forwards;
+    animation: fadeIn 1s ease-in 0.3s forwards;
 }
 
 a.info-box {
@@ -198,8 +199,8 @@ textarea {
     padding: 8px 0;
 }
 
-.button :hover {
-    background-color: #388e3c;
+.button:hover {
+    background-color:#388e3c;
 }
 
 .info-box {
@@ -210,3 +211,8 @@ textarea {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     transform: translate (-4px) scale(1.02);
 }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
