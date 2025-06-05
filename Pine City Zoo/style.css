@@ -208,13 +208,13 @@ textarea {
     border-radius: 6px;
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     margin: 12px 0;
-    padding: 8px 0;
+    padding: 8px;
     cursor: pointer;
     box-shadow: 0 2px 8px(44, 62, 80, 0.08);
-}
+
 
 .button:hover {
     background-color: #388e3c;
