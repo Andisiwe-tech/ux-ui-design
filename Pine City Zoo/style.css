@@ -81,10 +81,13 @@ padding-top: 12px;
 }
 
 #main{
+    background-color: #f0f0f0;
+    display: grid;
     margin-top: 119px;
     background: url('images/map-blur.png');
     background-repeat: repeat-y;
     animation: fadeIn 1s ease-in 0.3s forwards;
+    box-shadow: #388e3c 0 0 10px;
 }
 
 #content{
